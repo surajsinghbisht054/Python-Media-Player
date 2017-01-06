@@ -25,5 +25,5 @@ __author__='''
 
 # ScreenShots
 
-![Screenshot](scr/test.png?raw=true "Screen1")
-![Screenshot](scr/test1.png?raw=true "Screen2")
+![Screenshot](src/test.png?raw=true "Screen1")
+![Screenshot](src/test1.png?raw=true "Screen2")
