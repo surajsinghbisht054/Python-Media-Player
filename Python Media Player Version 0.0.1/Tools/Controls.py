@@ -5,8 +5,16 @@ __author__='''
 
 S.S.B
 surajsinghbisht054@gmail.com
-https://hackworldwithssb.blogspot.in
+https://bitforestinfo.blogspot.com
 '''
+#
+#
+##################################################
+######## Please Don't Remove Author Name #########
+############### Thanks ###########################
+##################################################
+#
+#
 # Here Importing Modules
 from Configuration_base import *
 import Tkinter, ttk, player, ListPanel, DisplayPanel, os, threading, time
