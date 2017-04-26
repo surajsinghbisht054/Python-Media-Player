@@ -29,7 +29,12 @@ __author__='''
 ######################################################
 '''
 # Importing Modules
-import Tkinter, ttk, os
+try:
+    import Tkinter, ttk
+except:
+    import tkinter as Tkinter
+    import tkinter.ttk as ttk
+import os
 from Configuration_base import *
 import Controls
 
@@ -60,8 +65,8 @@ class Main(Tkinter.Tk):
             delete_selectedicon=Tkinter.PhotoImage(file="../Icons/delete_selected.gif")
     
         except Exception as e:
-            print "[ Script Detected Change or Missing Something ]\n"
-            print e
+            print ("[ Script Detected Change or Missing Something ]\n")
+            print (e)
             import sys
             sys.exit(0)
 

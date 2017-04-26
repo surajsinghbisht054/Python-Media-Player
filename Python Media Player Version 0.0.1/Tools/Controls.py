@@ -17,7 +17,14 @@ https://bitforestinfo.blogspot.com
 #
 # Here Importing Modules
 from Configuration_base import *
-import Tkinter, ttk, player, ListPanel, DisplayPanel, os, threading, time
+
+try:
+    import Tkinter, ttk
+except:
+    import tkinter as Tkinter
+    import tkinter.ttk as ttk
+    
+import player, ListPanel, DisplayPanel, os, threading, time
 
 class Controls:
     def __init__(self, root, playing, player, volume):
@@ -31,8 +38,9 @@ class Controls:
         self.var.set(1.0)
         self.songtime=Tkinter.IntVar()
         self.create_control_panel()
-        self.time_thread()
+        #self.time_thread()
         #print self.player.playing
+
     def time_thread(self):
         threading.Thread(target=self.update_time_).start()
         return
@@ -45,11 +53,11 @@ class Controls:
                 pass
             else:
                 try:
-                    print 'Playing Next Music'
+                    print ('Playing Next Music')
                     self.Next()
                     pass
                 except Exception as e:
-                    print 'Playing Next Music- Error',e
+                    print ('Playing Next Music- Error',e)
                     pass
                 
                 
@@ -141,8 +149,8 @@ class Controls:
             self.status.set(0)
             return k
         else:
-            print 'something wrong on controls.Controls.play'
-            print 'or playing variable is empty'
+            print ('something wrong on controls.Controls.play')
+            print ('or playing variable is empty')
             return 'Nothing'
     
     def pause(self):
@@ -161,7 +169,7 @@ class Controls:
             base=os.path.basename(self.playing.get())
             k=dirt.index(base)-1
             path=os.path.join(dirbase, dirt[k])
-            print path
+            print (path)
             self.playing.set(path)
             pass
         except:
@@ -176,7 +184,7 @@ class Controls:
             base=os.path.basename(self.playing.get())
             k=dirt.index(base)-1
             path=os.path.join(dirbase, dirt[k])
-            print path
+            print (path)
             self.playing.set(path)
             pass
         except:

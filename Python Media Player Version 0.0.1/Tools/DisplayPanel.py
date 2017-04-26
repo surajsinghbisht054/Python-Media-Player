@@ -38,7 +38,12 @@ __author__='''
 #=====================================================
 
 # Here Importing Module
-import Tkinter, ttk, os.path
+try:
+    import Tkinter, ttk
+except:
+    import tkinter as Tkinter
+    import tkinter.ttk as ttk
+import os.path
 from Configuration_base import *
 
 # Creating Class

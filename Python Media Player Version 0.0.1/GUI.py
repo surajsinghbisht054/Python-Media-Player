@@ -28,14 +28,18 @@ __author__='''
     Note: We Feel Proud To Be Indian
 ######################################################
 '''
-print __author__
+print (__author__)
 import os
 def main():
 	try:
-		import Tkinter, pyglet
+		try:
+			import Tkinter
+		except:
+			import tkinter
+		import pyglet
 		os.system("cd Tools && python Gui.py")
 	except Exception as e:
-		print e
-		raw_input("")
+		print(e)
+		input("")
 if __name__=='__main__':
 	main()

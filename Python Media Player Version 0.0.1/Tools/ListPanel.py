@@ -45,7 +45,16 @@ __author__='''
 
 
 # Here Importing Modules
-import Tkinter, os, tkFileDialog
+# Importing Modules
+try:
+    import Tkinter, ttk,tkFileDialog
+except:
+    import tkinter as Tkinter
+    import tkinter.ttk as ttk 
+    import tkinter.filedialog as tkFileDialog
+
+import os
+
 from Configuration_base import *
 
 # Creating Class
@@ -115,12 +124,12 @@ class ListPanel:
             if self.directory.get()=='.':
                     path=os.path.join(os.getcwd(),store)
                     self.playing.set(path)
-                    print '[+] Song Variable Update Path : {}'.format(path)
+                    print ('[+] Song Variable Update Path : {}'.format(path))
                     return 
             else:
                     path=os.path.join(self.directory.get(),store)
                     self.playing.set(path)
-                    print '[+] Song Variable Update Path : {}'.format(path)
+                    print ('[+] Song Variable Update Path : {}'.format(path))
                     return 
         
 
@@ -140,7 +149,7 @@ class ListPanel:
             path=tkFileDialog.askopenfilename(title='Play Selected Song')
             if path:
                     self.playing.set(path)
-                    print '[+] Song Variable Update Path : {}'.format(path)
+                    print ('[+] Song Variable Update Path : {}'.format(path))
                     return         
 
                     
@@ -148,7 +157,7 @@ class ListPanel:
             path=tkFileDialog.askdirectory(title='Select Directory For Playlist')
             if path:
                     self.directory.set(path)
-                    print path
+                    print (path)
                     return self.update_list_box_songs(dirs=path)
         
         

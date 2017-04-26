@@ -65,7 +65,7 @@ class mediaplayer:
             self.player.seek(time)
             return 
         except:
-            print '[+] Jump is Not Possible'
+            print ('[+] Jump is Not Possible')
             return
         
         
@@ -147,14 +147,14 @@ class mediaplayer:
                     self.songduration.set(self.duration_())   # Updating duration Time
                     return 
                 except Exception as e:
-                    print "[+] Something wrong when playing song",e
+                    print ("[+] Something wrong when playing song",e)
                     return 
             except Exception as e:
-                print ' [+] Please Check Your File Path', self.path.get()
-                print ' [+] Error: Problem On Playing \n ',e
+                print (' [+] Please Check Your File Path', self.path.get())
+                print (' [+] Error: Problem On Playing \n ',e)
                 return 
         else:
-            print ' [+] Please Check Your File Path', self.path.get()
+            print (' [+] Please Check Your File Path', self.path.get())
         return
 
     def fast_forward(self):
