@@ -112,7 +112,8 @@ class mediaplayer:
                 self.songtime.set(now)
                 pass
             
-            except:
+            except Exception as e:
+                print e
                 pass
         
     

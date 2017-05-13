@@ -139,6 +139,7 @@ class Controls:
             store=self.var.get()-5
             self.var.set(store)
             return self.update_volume()
+            
     def play(self):
         if self.status.get()==0:
             k=self.player.play_song()
