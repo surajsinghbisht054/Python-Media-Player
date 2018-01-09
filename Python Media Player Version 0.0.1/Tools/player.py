@@ -29,7 +29,11 @@ __author__='''
 ######################################################
 '''
 # Here Importing Modules
-import pyglet, datetime, os, time, threading
+import pyglet     # import pyglet
+import datetime
+import os
+import time
+import threading
 import pyglet.media as media
 from Configuration_base import *
 
@@ -54,7 +58,7 @@ class mediaplayer:
         self.songtime=song_time             # Song Time Variable
         self.songduration=song_duration     # Song Duration
         self.player=media.Player()          # pyglet Media Player
-        self.player.volume=1.5
+        self.player.volume=1.5              # 
         self.time_thread()                  # Time Updating Thread
 
         self.path.trace('w',self.play_song)
