@@ -114,4 +114,6 @@ if __name__=='__main__':
     var3=Tkinter.StringVar()
     Tkinter.Entry(root, textvariable=var3).pack(side='top')
     Player(root, var1, var2, var3)
-    root.mainloop()
+    while True:
+        root.update()
+        root.update_idletask()
