@@ -1,32 +1,22 @@
 # Python-Media-Player
-Python Media Player
+This is a simple music player written in Python With Tkinter and Other Useful Module. I wrote this project just 
+for practise and fun purpose. if you are also new to python and want to practise your skills . then you can use this
+python repo and your Project. You can Upgrade the features of this Music Player
 
-
-# ---------------- READ ME ---------------------------------------------
-# This Script is Created Only For Practise And Educational Purpose Only
-
-# This Script Is Created For http://bitforestinfo.blogspot.in
-
-# ScreenShots
-
+### First Screenshot
 ![Screenshot](src/test.png?raw=true "Screen1")
+
+### Second Screenshot
 ![Screenshot](src/test1.png?raw=true "Screen2")
 
-# Author.
-
-######################################################
-                By S.S.B Group                          
-######################################################
-
+###  Author Details
+```
     Suraj Singh
     Admin
     S.S.B Group
     surajsinghbisht054@gmail.com
-    http://bitforestinfo.blogspot.com/
-
-    Note: We Feel Proud To Be Indian
-######################################################
-
+    http://www.bitforestinfo.com
+```
 
 
 # Development.
